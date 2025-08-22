@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>日本語チャットAI</title>
+</head>
+<body>
+    <h1>チャットAI</h1>
+    <form method="POST">
+        <input type="text" name="message" placeholder="話しかけてみて">
+        <button type="submit">送信</button>
+    </form>
+    {% if user_input %}
+        <p><b>あなた:</b> {{ user_input }}</p>
+        <p><b>AI:</b> {{ response }}</p>
+    {% endif %}
+</body>
+</html>
