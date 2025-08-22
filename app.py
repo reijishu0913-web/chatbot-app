@@ -5,7 +5,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 app = Flask(__name__)
 
 # 日本語GPTモデルを読み込む
-model_name = "rinna/japanese-gpt2-medium"
+model_name = "rinna/japanese-gpt2-small"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
